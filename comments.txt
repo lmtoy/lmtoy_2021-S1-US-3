@@ -1,7 +1,9 @@
+97518       pointing check
 97520       first science map!!!
 97521       .
 97523       .
 97524       .
+97526       pointing check
 97528       .
 97529       .
 97531       .
@@ -27,7 +29,7 @@
 97871       .
 97872       all bad baselines
 97873       1/2 bad baselines
-97520_97521 .
+97520_97521 sample combo
 97520_97532 .
 97520_97871 .
 97520_98007 .
