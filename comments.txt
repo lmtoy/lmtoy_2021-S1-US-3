@@ -29,11 +29,18 @@
 97871       .
 97872       all bad baselines
 97873       1/2 bad baselines
+
+
+98974	    -14,-15
+98975	    -14,-15
+
+99703       last obnum so far
+#
 97520_97521 sample combo
 97520_97532 .
 97520_97871 .
 97520_98007 .
 97520_98737 .
-97520_99703 FINAL SO FAR
+97520_99703 LATEST SO FAR
 97740_97744 fun combo of 4 bad
 97743_97744 fun combo of 2 bad
