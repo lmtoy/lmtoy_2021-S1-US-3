@@ -37,5 +37,5 @@ run2:
 
 summary:
 	@for p in $(PID); do \
-	(echo $$p; cp comments.txt $(WORK_LMT)/$$p; cd $(WORK_LMT)/$$p; mk_summary1.sh > index.html); \
+	(echo $$p;  mk_summary1.sh > README.html); \
 	done
