@@ -6,15 +6,11 @@ example of this is discussed in https://casaguides.nrao.edu/index.php?title=M100
 
 ## OBSNUM
 
-A total of 30 (so far) science obsnum's were taken in the CO line (115.3 GHz).
+A total of 48 (so far) science obsnum's were taken in the CO line (115.3 GHz). 7 of those are clearly
+bad, and perhaps more.
 
-The good data were taken in a 4 night end sprint (March 12, 13, 18, 19) before Covid shut down the observatory.
-Each dataset integrated a 120 arcsec region in OTF sthyle for about 600 seconds. Beams 0,5,12,13,14,15 were
-often suspect. Individual inspection is needed. The final RMS in the combined map was about 21-23 mK, with no
-clear CO detection.
-
-More detailed descriptions are in the file **mk_runs.py**.
-
+Current RMS is down to 21 mK, but the current last combination up to 99703 has bad data included,
+as the mom0 looks bad. The combo  up through 98737 looks in fact much better (rms 24 mK)
 
 ## LMTOY Data Reduction
 
