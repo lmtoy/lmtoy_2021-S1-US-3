@@ -2,8 +2,6 @@
 
 
 PID  = 2021-S1-US-3
-RUN1 = $(PID).run1
-RUN2 = $(PID).run2
 
 help:
 	@echo PID=$(PID)
@@ -15,13 +13,8 @@ help:
 # echo $(lmtinfo.py grep 2022 Science 2021-S1-US-3|awk '{print $2}')
 
 
-$(RUN1):	mk_runs
-	./mk_runs
-
-$(RUN2):	mk_runs
-	./mk_runs
-
-runs:	$(RUN1) $(RUN2)
+runs:
+	./mk_runs.py
 
 run1:
 	@echo "Submit run1 using any of these methods:"
