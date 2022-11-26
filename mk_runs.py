@@ -39,13 +39,4 @@ pars2 = {}
 pars2['M100'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"    # -0,-5
 
 
-if True:
-    print("new style")    
-    runs.mk_runs(project, on, pars1, pars2)
-    sys.exit(0)
-else:
-    print("old style")
-
-
-
-
+runs.mk_runs(project, on, pars1, pars2)
