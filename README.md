@@ -2,11 +2,11 @@
 
 This project observed M100 in the CO(1-0) 115 GHz transition. One of the science goals is to learn
 more about how important data combination of interferometric and single dish is. A background
-example of this is discussed in https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.1
+example of this is discussed in https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.4
 
 ## OBSNUM
 
-A total of 48 (so far) science obsnum's were taken in the CO line (115.3 GHz). 7 of those are clearly
+A total of 46 (so far) science obsnum's were taken in the CO line (115.3 GHz). 7 of those are clearly
 bad, and perhaps more.
 
 Current RMS is down to 21 mK, but the current last combination up to 99703 has bad data included,
