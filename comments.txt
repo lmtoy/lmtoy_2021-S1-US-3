@@ -1,3 +1,8 @@
+# comments and flags for M100 - by default we remove beams 0 and 5, except where overridden below with pix_list=\
+#
+#  pars1['M100'] = "dv=250 dw=300 extent=220"
+#  pars2['M100'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
+#
 97518       pointing check
 97520       -0,-5 first science map!!!
 97521       -0,-5
