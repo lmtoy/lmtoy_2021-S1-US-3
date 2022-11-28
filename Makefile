@@ -9,24 +9,12 @@ help:
 	@echo Targets here:
 	@echo "   runs      - make the run1/run2/... files"
 	@echo "   summary   - update the project summary index"
-
-# echo $(lmtinfo.py grep 2022 Science 2021-S1-US-3|awk '{print $2}')
+	@echo "               https://taps.lmtgtm.org/lmtslr/$(PID)"
 
 
 runs:
 	./mk_runs.py
 
-run1:
-	@echo "Submit run1 using any of these methods:"
-	@echo "    sbatch_lmtoy.sh $(RUN1)"
-	@echo "    parallel --jobs 16 < $(RUN1)"
-	@echo "    bash $(RUN1)"
-	@echo "when this is done, run2 can be started"
-run2:
-	@echo submit run2 using any of these methods:
-	@echo "    sbatch_lmtoy.sh $(RUN2)"
-	@echo "    parallel --jobs 16 < $(RUN2)"
-	@echo "    bash $(RUN2)"
 
 summary:
 	@for p in $(PID); do \
