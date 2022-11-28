@@ -26,7 +26,7 @@
 98000       -0,-5
 98006       -0,-5
 98007       some wavys
-98011       some wavys                # pix_list=-0,-5,
+98011       some wavys                # pix_list=-0,-5
 98012       lots wavys                # pix_list=1,3,9,13,14,15
 98686       -0,-5
 98687       -0                        # pix_list=-0
