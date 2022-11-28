@@ -31,9 +31,8 @@ on['M100'] = [ 97520, 97521, 97523, 97524, 97528, 97529, 97531, 97532,          
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1['M100'] = "dv=250 dw=300 extent=240"
-pars1['M100'] = "dv=250 dw=300 extent=240 edge=1"
-
+pars1['M100'] = "dv=250 dw=300 extent=220"
+400 x 430
 #        common parameters per source on subsequent runs (run1b, run2b)
 pars2 = {}
 pars2['M100'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"    # -0,-5
