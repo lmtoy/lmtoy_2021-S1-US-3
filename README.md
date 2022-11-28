@@ -9,8 +9,7 @@ example of this is discussed in https://casaguides.nrao.edu/index.php?title=M100
 A total of 46 (so far) science obsnum's were taken in the CO line (115.3 GHz). 7 of those are clearly
 bad, and perhaps more.
 
-Current RMS is down to 21 mK, but the current last combination up to 99703 has bad data included,
-as the mom0 looks bad. The combo  up through 98737 looks in fact much better (rms 24 mK)
+Current RMS is down to just under 21 mK.
 
 ## LMTOY Data Reduction
 
@@ -83,8 +82,10 @@ but this will take a while of course.
 Description of the file that should be in this directory
 
 
-      lmtinfo.log               logfile from lmtinfo.py on all relevant science observations
-      mk_runs                   script to make the run files
-      2021-S1-US-3.run1         created by mk_runs
-      2021-S1-US-3.run2         created by mk_runs
+      lmtinfo.txt               logfile from lmtinfo.py on all relevant science observations
+      mk_runs.py                script to make the run files
+      2021-S1-US-3.run1a        created by mk_runs
+      2021-S1-US-3.run1b        created by mk_runs
+      2021-S1-US-3.run2a        created by mk_runs
+      2021-S1-US-3.run2b        created by mk_runs
       2021-S1-US-3/             (optional) directory with pipeline results, otherwise in $WORK_LMT
