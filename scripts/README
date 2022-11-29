@@ -1,6 +1,13 @@
 Following up on the casaguide.
 
-To execute the scripts, you need CASA and NEMO.
+
+# Software
+
+To execute the scripts, you need CASA and NEMO (LMTOY contains NEMO)
+
+
+# Data
+
 Best might be to create symlinks here if the files are somewhere else.
 We need:
 
@@ -9,3 +16,11 @@ M100_LMT.fits                         LMT cube ; symlink to M100_97520_99703.fit
 M100_Band3_12m_CalibratedData.ms      ALMA 12m calibrated measurement set
 M100_Band3_7m_CalibratedData.ms       ALMA 7m calibrated measurement set
 M100_TP_CO_cube.spw3.image.bl         ALMA TP calibrated image cube
+
+
+# Scripts
+
+M100_casaguide64.py
+convert1.py
+mk_fluxes.sh
+cumflux.py
