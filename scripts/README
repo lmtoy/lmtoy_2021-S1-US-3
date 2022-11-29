@@ -1,0 +1,7 @@
+Following up on the casaguide.
+
+To execute the scripts, you need CASA and NEMO.
+Best might be to create symlinks here if the files are somewhere else.
+We need:
+
+M100_LMT.fits     symlink to M100_97520_99703.fits ?
