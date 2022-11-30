@@ -24,3 +24,16 @@ M100_casaguide64.py    - convert the ALMA data into a combine and feather - take
 convert1.py            - convert LMA K to Jy/beam cube
 mk_fluxes.sh           - make radial cumulative flux tables
 cumflux.py             - plot radial cumulative flux
+
+
+## A note on computing time
+
+Currently CASA often still benefits from forcing it on one core. The core usage is staggering,
+even though the elapsed time is only minor (but still in favor of running on 1 core):
+
+   8 cores:    6715.37user 130.58system 20:46.18elapsed 549%CPU 
+   1 core:     1128.20user  79.57system 20:19.85elapsed  99%CPU 
+
+the latter needs the command
+
+   OMP_NUM_THREADS=1 /usr/bin/time casa -c M100_casaguide64.py
