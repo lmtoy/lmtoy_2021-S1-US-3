@@ -7,15 +7,7 @@
 
 import os
 import sys
-
-# in prep of the new lmtoy module
-try:
-    lmtoy = os.environ['LMTOY']
-    sys.path.append(lmtoy + '/lmtoy')
-    import runs
-except:
-    print("No LMTOY with runs.py")
-    sys.exit(0)
+from lmtoy import runs
 
 project="2021-S1-US-3"
 
@@ -51,4 +43,4 @@ pars2['M100']   = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"    # -0,-5
 pars2['RT-Vir'] = ""
 pars2['junk']   = ""
 
-runs.mk_runs(project, on, pars1, pars2)
+runs.mk_runs(project, on, pars1, pars2, sys.argv)
