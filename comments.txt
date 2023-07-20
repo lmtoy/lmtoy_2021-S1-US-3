@@ -3,12 +3,10 @@
 #  pars1['M100'] = "dv=250 dw=300 extent=220"
 #  pars2['M100'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
 #
-97518       pointing check
 97520       -0,-5 first science map!!!
 97521       -0,-5
 97523       -0,-5
 97524       -0,-5
-97526       pointing check
 97528       -0,-5
 97529       -0,-5
 97531       -0,-5
@@ -51,6 +49,56 @@
 99680       -0,-5 -1?
 99702       ok
 99703       last obnum so far
+#  RT-Vir
+
+97513    pointing                  # pix_list=-0,1,2
+97518    pointing                  # pix_list=-0,3,5
+97526    pointing            	   # pix_list=-3,5
+97534    pointing            	   # pix_list=-2,5
+97738    pointing            	   # pix_list=-0,2,3
+97746    pointing            	   # pix_list=-2,5
+
+97859    PLFAIL
+97866    pointing - very wavy      # pix_list=-0,3
+97867    pointing - very wavy      # pix_list=-0,3
+97868    PLFAIL
+97875    PLFAIL
+97879    pointing                  # pix_list=-2,5
+97996    pointing                  # pix_list=-3
+
+98002    pointing                  # pix_list=-3
+98004    pointing - short obs      #
+98009    pointing - wavy     	   # pix_list=-2,3
+98014    pointing - messy     	   # pix_list=-2
+98016    pointing - wavy           # pix_list=-3
+
+98684    pointing  - rippled       # pix_list=-0,3
+98689    pointing                  # pix_list=-0,3
+
+98724    pointing            	   # pix_list=-0,2
+98729    pointing            	   # pix_list=-0,2,3
+98734    pointing            	   # pix_list=-0,2
+98739    pointing            	   # pix_list=-0,2
+
+98869    pointing                  # pix_list=-0,3
+98878    PLFAIL
+98888    pointing                  # pix_list=-0,3,14,15
+
+
+98949    pointing                  # pix_list=-0,2,3,14,15
+98958    pointing                  # pix_list=-0,1,14,15
+98968    pointing                  # pix_list=-0,1,14,15
+98970    pointing                  # pix_list=-0,1,14,15
+98972    pointing                  # pix_list=-0,1,14,15
+98977    pointing                  # pix_list=-0,1,14,15
+
+99672    pointing                  # pix_list=-3,-5
+99677    PLFAIL
+99682    pointing       	   # pix_list=-3
+99683    pointing       	   # pix_list=-3
+99705    pointing       	   # pix_list=-0,2
+
+
 #
 97520_97521 sample combo
 97520_97532 .
