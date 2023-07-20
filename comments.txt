@@ -61,7 +61,7 @@
 97859    PLFAIL
 97866    pointing - very wavy      # pix_list=-0,3
 97867    pointing - very wavy      # pix_list=-0,3
-97868    PLFAIL
+# 97868    PLFAIL mislabeled
 97875    PLFAIL
 97879    pointing                  # pix_list=-2,5
 97996    pointing                  # pix_list=-3
@@ -96,7 +96,7 @@
 99677    PLFAIL
 99682    pointing       	   # pix_list=-3
 99683    pointing       	   # pix_list=-3
-99705    pointing       	   # pix_list=-0,2
+99705    pointing    (-5?)   	   # pix_list=-0,2
 
 
 #
