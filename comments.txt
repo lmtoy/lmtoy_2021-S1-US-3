@@ -42,10 +42,10 @@
 98692       -0                        # pix_list=-0
 98726       -0                        # pix_list=-0
 98727       -0                        # pix_list=-0
-98731       -0,-5
-98732       -0                        # pix_list=-0
-98736       -0                        # pix_list=-0
-98737       -0,-5?
+98731       -0,-5 pnt?
+98732       -0  pnt?                  # pix_list=-0
+98736       -0  pnt?                  # pix_list=-0
+98737       -0,-5? pnt?
 # Night 6
 98974	    -0,-14,-15                # pix_list=-0,-14,-15
 98975	    -0,-14,-15                # pix_list=-0,-14,-15
@@ -64,7 +64,7 @@
 97526    pointing            	   # pix_list=-3,5
 97534    pointing            	   # pix_list=-2,5
 97738    pointing            	   # pix_list=-0,2,3
-97746    pointing            	   # pix_list=-2,5
+97746    pointing            	   # pix_list=-0,1,2,5
 
 97859    pointing                  # pix_list=-0,3
 97866    pointing - very wavy      # pix_list=-0,3
@@ -75,7 +75,7 @@
 97996    pointing                  # pix_list=-3
 
 98002    pointing                  # pix_list=-3
-98004    pointing - short obs      #
+# 98004    pointing - short obs      #
 98009    pointing - wavy     	   # pix_list=-2,3
 98014    pointing - messy     	   # pix_list=-2
 98016    pointing - wavy           # pix_list=-3
@@ -83,7 +83,7 @@
 98684    pointing  - rippled       # pix_list=-0,3
 98689    pointing                  # pix_list=-0,3
 
-98724    pointing            	   # pix_list=-0,2
+98724    pointing            	   # pix_list=-0,3
 98729    pointing            	   # pix_list=-0,2,3
 98734    pointing            	   # pix_list=-0,2
 98739    pointing            	   # pix_list=-0,2
@@ -94,10 +94,10 @@
 
 
 98949    pointing                  # pix_list=-0,2,3,14,15
-98958    pointing                  # pix_list=-0,1,14,15
-98968    pointing                  # pix_list=-0,1,14,15
-98970    pointing                  # pix_list=-0,1,14,15
-98972    pointing                  # pix_list=-0,1,14,15
+98958    pointing                  # pix_list=-0,2,14,15
+98968    pointing                  # pix_list=-0,2,14,15
+98970    pointing                  # pix_list=-0,2,14,15
+98972    pointing                  # pix_list=-0,2,14,15
 98977    pointing                  # pix_list=-0,1,14,15
 
 99672    pointing                  # pix_list=-3,-5
