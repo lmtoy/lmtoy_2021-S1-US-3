@@ -17,7 +17,7 @@ nights in April/May 2022. April 5, 6, 7, 8, 27 and May 4, 17.
      Apr 7   begin, 2, end, end
      Apr 8   4, end, end
      Apr 27  begin, 4, end
-     May 4   8xbegin end
+     May 4   8xbegin, end
      May 17  begin, 3, end
 
        April                  May           
@@ -29,7 +29,11 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 24 25 26 27 28 29 30  29 30 31              
                                                                   
 
-Current final RMS is down to just under 21 mK. Each dataset around 100mK. 100/sqrt(46-7)=16
+Current final RMS is down to just under 21 mK. Each dataset around 100mK. 100/sqrt(46-7)=16,
+so not quite as good as expected.
+
+Beam 1 always bad, Beam 5 often, Beam 6 has some low pattern, might be useful to try leaving it
+out for all
 
 ## LMTOY Data Reduction
 
