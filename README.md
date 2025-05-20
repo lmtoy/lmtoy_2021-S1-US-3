@@ -6,11 +6,13 @@ example of this is discussed in https://casaguides.nrao.edu/index.php?title=M100
 
 ## OBSNUM
 
-A total of 46 (so far) science obsnum's were taken in the CO line (115.3 GHz). 7 of those are clearly
-bad, and perhaps more.
+A total of 46 science obsnum's were taken in the CO line (115.3 GHz). 7 of those are clearly
+bad, and perhaps more. Summary of the data taken is in lmtinfo.txt. The bad ones are also
+labeled with QAFAIL in the comments.txt file.
 
-We also have 36 pointing observations on RT-Vir, to check on the pointing.   These were observed in 7
-nights in April/May 2022. April 5, 6, 7, 8, 27 and May 4, 17.
+We also have 36 pointing observations on RT-Vir, to check on the pointing.
+
+Observatins were taken in 7 nights in April/May 2022. April 5, 6, 7, 8, 27 and May 4, 17.
 
      Apr 5   begin, 2, end
      Apr 6   begin, end
@@ -29,74 +31,44 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
 24 25 26 27 28 29 30  29 30 31              
                                                                   
 
-Current final RMS is down to just under 21 mK. Each dataset around 100mK. 100/sqrt(46-7)=16,
-so not quite as good as expected.
+Current final RMS is down to just under 21 mK. Each dataset has a noise of around 100mK. 100/sqrt(46-7)=16,
+so not quite as good as expected?  Some systematics we can work on?
 
 Beam 1 always bad, Beam 5 often, Beam 6 has some low pattern, might be useful to try leaving it
 out for all
 
-## LMTOY Data Reduction
-
-There are two ways to run the SLpipeline, using a different $WORK_LMT directory where the root
-of the data processing occurs
-
-1. Use the WORK_LMT that came with where **lmtoy** was installed. This will likely require
-   write permission from the owner
-
-   This is the way it runs on Unity.
-
-2. Set WORK_LMT to a directory here in this directory,  something like
-
-              WORK_LMT=`pwd`
-
-   and no permissions in the $LMTOY tree are. Of course you still need to have LMTOY
-   installed. The pipeline will then create all  data products in this local directory.
-
 ### Creating the run files
 
-A master script **mk_runs** contains all the information on which obsnums are good,
-which beams are good, etc.  You always will need to re-run this script to create the
-SLpipeline *run* files. The script also uses the (optional) **OBSNUM.args** files, where
-arguments specific to this obsnum can be stored. These files should be edited by
-a user to create a new "final" dataset. Any optional post-processing after the
+A master script **mk_runs.my** contains all the global information on
+which obsnums are good, which beams are good, etc.  You always will
+need to re-run this script to create the SLpipeline *run* files,
+normally through the `make runs` command.
+
+The script also uses the (otherwise optional) `comments.txt` file,
+where comments for the summary and deviant pipeline arguments specific
+to an obsnum can be stored. These files should be edited by a user to
+create a new "final" dataset. Any optional post-processing after the
 pipeline will not be described here (but is of course recommended?).
 
 This command creates the run files (it uses the **mk_runs** scripts):
 
       make runs
 	  
-in this case just **2021-S1-US-3.run1** and **2021-S1-US-3.run2**
+which creates the run files.
 
 ### Running the pipeline
 
 
-With [SLURM](https://slurm.schedmd.com/documentation.html) this is the way:
+With [SLURM](https://slurm.schedmd.com/documentation.html) this is the way on unity:
 
-      sbatch_lmtoy 2021-S1-US-3.run1
-      # wait for it to finish
-      sbatch_lmtoy 2021-S1-US-3.run2
+      sbatch_lmtoy2.sh 2021-S1-US-3.run1a 2021-S1-US-3.run1b 2021-S1-US-3.run2
 
-whereas with [Gnu Parallel](https://www.gnu.org/software/parallel/)
-
-      parallel --jobs 16 2021-S1-US-3.run1
-      parallel --jobs 16 2021-S1-US-3.run2
-
-can be submitted in a shell as the seond one will wait until the first one has finished
-all pipeline calls. On "lma" this takes about 30 minutes to process all single obsnums
-(run1) and a few combination maps (run2)
-
-If you have no good parallel/batch processing available, the slow and trusted way is
-via your [unix shell](https://www.gnu.org/software/bash/):
-
-      bash 2021-S1-US-3.run1
-      bash 2021-S1-US-3.run2
-
-but this will take a while of course.
+On "lma" using gnu parallel instead this takes about 30 minutes to process all single obsnums
+(run1) and a few combination maps (run2), or running them serially through bash takes a few hours.
 
 ## Science:
 
 ### M100
-
 
 
 
@@ -108,10 +80,11 @@ Description of the file that should be in this directory
 
       lmtinfo.txt               logfile from lmtinfo.py on all relevant science observations
       mk_runs.py                script to make the run files
-      2021-S1-US-3.run1a        created by mk_runs
-      2021-S1-US-3.run1b        created by mk_runs
-      2021-S1-US-3.run2a        created by mk_runs
-      2021-S1-US-3.run2b        created by mk_runs
+      comments.txt              comments for the summary and optional pipeline parameters
+      2021-S1-US-3.run1a        created by mk_runs.py
+      2021-S1-US-3.run1b        created by mk_runs.py
+      2021-S1-US-3.run2a        created by mk_runs.py
+      2021-S1-US-3.run2b        created by mk_runs.py
       2021-S1-US-3/             (optional) directory with pipeline results, otherwise in $WORK_LMT
 
 1. P R D R D P R D R D P                 01:15:04 04:27:29   8/8
@@ -122,5 +95,17 @@ Description of the file that should be in this directory
 6. P P P P P P P P R D P       	 	 23:10:45 03:46:56   2/2
 7. P R D P D C P P R D P		 23:04:34 01:41:04   6/6
 
-P   =  1.5 min
-R,D = 12.0 min
+P   =  1.5 min   pointing
+R,D = 12.0 min   RA or DEC map
+
+## Pointing
+
+Since the emission in M100 is already fairly strong in a single obsnum, one experiment
+to check on pointing is to make cross-correlation maps between them, and not rely on the
+actual headers. Conceivably this could show some offsets, that could result in a
+better aligned combination.  There was some indication there are some systematic offsets
+in some of the data, so this could be a more advanced version.
+
+Otherwise the effective beam for the ALMA+LMT combination is not the traditional 12", but more
+like 13 or 14", which has some impact on fidelity and correctness of the combination.
+
