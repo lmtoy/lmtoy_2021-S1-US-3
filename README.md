@@ -1,18 +1,25 @@
 # 2021-S1-US-3
 
-This project observed M100 in the CO(1-0) 115 GHz transition. One of the science goals is to learn
-more about how important data combination of interferometric and single dish is. A background
-example of this is discussed in https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.4
+This project observed M100 in the CO(1-0) 115 GHz transition using the
+old single bank setup in the WARES correllator. One of the science
+goals is to learn more about how important data combination of
+interferometric and single dish is. A background example of this is
+discussed in
+https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.4
+
+Given that ALMA is aiming (with ATLAST) for a 50m single dish, having
+a combination between ALMA and LMT data seems appropriate.
 
 ## OBSNUM
 
-A total of 46 science obsnum's were taken in the CO line (115.3 GHz). 7 of those are clearly
-bad, and perhaps more. Summary of the data taken is in lmtinfo.txt. The bad ones are also
-labeled with QAFAIL in the comments.txt file.
+A total of 46 science obsnum's were taken in the CO line (115.3
+GHz). About 7 of those are clearly bad, and perhaps more. Summary of
+all data taken is in lmtinfo.txt. The bad ones are also labeled with
+QAFAIL in the comments.txt file.
 
 We also have 36 pointing observations on RT-Vir, to check on the pointing.
 
-Observatins were taken in 7 nights in April/May 2022. April 5, 6, 7, 8, 27 and May 4, 17.
+Observations were taken in 7 nights in Spring 2022: April 5, 6, 7, 8, 27 and May 4, 17.
 
      Apr 5   begin, 2, end
      Apr 6   begin, end
@@ -32,10 +39,10 @@ Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa
                                                                   
 
 Current final RMS is down to just under 21 mK. Each dataset has a noise of around 100mK. 100/sqrt(46-7)=16,
-so not quite as good as expected?  Some systematics we can work on?
+so not quite as good as expected?  Some systematics we can work on? 
 
 Beam 1 always bad, Beam 5 often, Beam 6 has some low pattern, might be useful to try leaving it
-out for all
+out for all?
 
 ### Creating the run files
 
@@ -50,7 +57,7 @@ to an obsnum can be stored. These files should be edited by a user to
 create a new "final" dataset. Any optional post-processing after the
 pipeline will not be described here (but is of course recommended?).
 
-This command creates the run files (it uses the **mk_runs** scripts):
+This command creates the run files:
 
       make runs
 	  
@@ -68,8 +75,10 @@ On "lma" using gnu parallel instead this takes about 30 minutes to process all s
 
 ## Science:
 
-### M100
+In the LMT+ALMA combination, the sole important parameter is the Jy/K factor, which we should
+explain here.
 
+### M100
 
 
 ## Files:
@@ -98,13 +107,14 @@ Description of the file that should be in this directory
 P   =  1.5 min   pointing
 R,D = 12.0 min   RA or DEC map
 
-## Pointing
+## Additional Pointing Corrections?
 
 Since the emission in M100 is already fairly strong in a single obsnum, one experiment
 to check on pointing is to make cross-correlation maps between them, and not rely on the
 actual headers. Conceivably this could show some offsets, that could result in a
 better aligned combination.  There was some indication there are some systematic offsets
-in some of the data, so this could be a more advanced version.
+in some of the data, so this could be a more advanced version, but there were also some
+very unexplained facts about the cross-corr data.
 
 Otherwise the effective beam for the ALMA+LMT combination is not the traditional 12", but more
 like 13 or 14", which has some impact on fidelity and correctness of the combination.
