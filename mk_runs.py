@@ -34,7 +34,7 @@ on['RT-Vir'] = [
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1['M100']   = "dv=250 dw=300 extent=220"
+pars1['M100']   = "dv=250 dw=300 extent=220 otf_cal=1"
 pars1['RT-Vir'] = "dv=25 dw=50 extent=120 maskmoment=0"
 
 #        common parameters per source on subsequent runs (run1b, run2b)
@@ -43,4 +43,4 @@ pars2['M100']   = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15 maskmoment=1"
 pars2['RT-Vir'] = ""
 
 if __name__ == '__main__':
-    runs.mk_runs(project, on, pars1, pars2, sys.argv)
+    runs.mk_runs(project, on, pars1, pars2, None, sys.argv)
