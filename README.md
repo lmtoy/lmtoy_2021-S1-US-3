@@ -16,7 +16,7 @@ https://github.com/teuben/lmtoy_2021-S1-US-3
 ## OBSNUM
 
 A total of 46 science obsnum's were taken in the CO line (115.3
-GHz). About 7 of those are clearly bad, and perhaps more. Summary of
+GHz). Eight (8) of those are labeled QAFAIL, i.e. bad. Summary of
 all data taken is in lmtinfo.txt. The bad ones are also labeled with
 QAFAIL in the comments.txt file.
 
