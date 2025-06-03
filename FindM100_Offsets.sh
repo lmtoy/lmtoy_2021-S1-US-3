@@ -9,18 +9,29 @@ obsnums=97520,97521,97523,97524,97528,97529,97531,97532,97861,97863,97864,\
 
 pos=41,41
 box=5
+link=2021-S1-US-3
+link=data_2023
+link=data_2025
+clip=0
+
+#       parse the commandline
+for arg in "$@"; do
+    export "$arg"
+done
+
 
 
 echo '# Computed with FindM100_Offsets.sh '
+echo "# pos=$pos box=$box clip=$clip link=$link"
 echo '#'
 echo '# Obsnum   XMEAN    YMEAN'
 
 export DEBUG=-1
 
 for o in $(nemoinp $obsnums); do
-    file=2021-S1-US-3/${o}/M100_${o}__0.mom0.fits
+    file=$link/${o}/M100_${o}__0.mom0.fits
     if [ -e $file ]; then
-	cen=$(fitsccd $file - | ccdblob - wcs=f pos=$pos box=$box | txtpar - p0=Center,1,2 p1=Center,1,3)
+	cen=$(fitsccd $file - | ccdblob - wcs=f pos=$pos box=$box clip=$clip | txtpar - p0=Center,1,2 p1=Center,1,3)
 	echo "$o  $cen"
     else
 	echo "# $o missing $file"
