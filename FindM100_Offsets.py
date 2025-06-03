@@ -116,6 +116,8 @@ for obs in obsnums:
 
    xlmt,ylmt=lmt_wcs.wcs_pix2world(np.array([XMEAN]),np.array([YMEAN]),0)
    C1=SkyCoord(xlmt,ylmt,frame='icrs',unit='degree')
+   deltax=(C1.icrs.ra.deg - C0.icrs.ra.deg)*3600
+   deltay=(C1.icrs.dec.deg - C0.icrs.dec.deg)*3600
    print(C1)
 # Show gauss 2d fit
 
@@ -133,9 +135,11 @@ for obs in obsnums:
    plt.imshow(lmt_m0,origin='lower',vmin=0,vmax=fitted_model.amplitude.value)
    plt.xlim(XPIX[0,0],XPIX[-1,-1])
    plt.ylim(YPIX[0,0],YPIX[-1,-1])
-   GFIT=fitted_model(XPIX,YPIX)
+   xtmp,ytmp=np.meshgrid(np.arange(ixmax-3,ixmax+4,0.1),np.arange(iymax-3,iymax+4,0.1))
+   GFIT=fitted_model(xtmp,ytmp)
+   print('GFIT shape: ',GFIT.shape)
    levs=np.array([0.5,0.6,0.7,0.8,0.9,1])*fitted_model.amplitude.value
-   plt.contour(XPIX,YPIX,GFIT,levs,colors='w')
+   plt.contour(xtmp,ytmp,GFIT,levs,colors='w')
    plt.plot(np.array([XMEAN]),np.array([YMEAN]),'ko')
    plt.plot(np.array([fitted_model.x_mean.value]),np.array([fitted_model.y_mean.value]),'ro')
    plt.title(str('Obsnum: %d' % obs),loc='left')
