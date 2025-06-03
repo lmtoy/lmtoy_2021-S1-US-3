@@ -28,16 +28,18 @@ for arg in "$@"; do
 done
 
 
-
 echo '# Computed with FindM100_Offsets.sh '
+echo "#    pos=$pos box=$box clip=$clip link=$link"
 echo '#'
-echo '# Obsnum   XMEAN    YMEAN'
+echo '# Obsnum   XMEAN    YMEAN ...'
+echo '#          pixel    pixel ...'
 
 export DEBUG=-1
 
 for o in $(nemoinp $obsnums); do
     file=$link/${o}/M100_${o}__0.mom0.fits
     if [ -e $file ]; then
+	tmp=tmp_$o.tab
 	cen1="cen1"
 	cen2="cen2"
 	c=""
@@ -47,9 +49,10 @@ for o in $(nemoinp $obsnums); do
 
 	# cen2: a 2D gaussian fit, but using ccdblob to select the same points as used in the MOI method
 	#       making sure pixel 1 based coordinates returned
-	fitsccd $file - | ccdblob - wcs=f pos=$pos box=$box clip=$clip out=- | tabcomment - > tmp_$o.tab
+	fitsccd $file - | ccdblob - wcs=f pos=$pos box=$box clip=$clip out=- | tabcomment - > $tmp
 	cen2=$(tabnllsqfit tmp_$o.tab  1,2 3 fit=gauss2d par=1,40,40,40,2|txtpar - %1,%2,%3+1,%4+1,%5,%6,%7 p0=a=,1,2 p1=b=,1,2 p2=c=,1,2 p3=d=,1,2 p4=e=,1,2 p5=c=,1,3 p6=d=,1,3)
 	if [ $? != 0 ] ; then  c="#" ; fi
+	rm -f $tmp
     else
 	echo "# $o missing $file"
     fi
