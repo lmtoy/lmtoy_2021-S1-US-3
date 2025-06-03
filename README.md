@@ -125,3 +125,6 @@ there are very obvious cases where the skewness of the profile indicates a point
 Otherwise the effective beam for the ALMA+LMT combination is not the traditional 12", but more
 like 13 or 14", which has some impact on fidelity and correctness of the combination.
 
+From a higher resolution CO(2-1) alma image one can see the central velocity gradient
+is about 20-25 km/s/arcsec.  At an assumed distance of 13.9 Mpc, this 30-40 km/s/kpc
+
