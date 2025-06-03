@@ -1,5 +1,7 @@
 # 2021-S1-US-3
 
+PI summaries are in:   http://taps.lmtgtm.org/lmtslr/2021-S1-US-3/
+
 This project observed M100 in the CO(1-0) 115 GHz transition using the
 old single bank setup in the WARES correllator. One of the science
 goals is to learn more about how important data combination of
@@ -10,10 +12,11 @@ https://casaguides.nrao.edu/index.php?title=M100_Band3_Combine_6.4
 Given that ALMA is aiming (with ATLAST) for a 50m single dish, having
 a combination between ALMA and LMT data seems appropriate.
 
+https://github.com/teuben/lmtoy_2021-S1-US-3
 ## OBSNUM
 
 A total of 46 science obsnum's were taken in the CO line (115.3
-GHz). About 7 of those are clearly bad, and perhaps more. Summary of
+GHz). Eight (8) of those are labeled QAFAIL, i.e. bad. Summary of
 all data taken is in lmtinfo.txt. The bad ones are also labeled with
 QAFAIL in the comments.txt file.
 
@@ -116,6 +119,12 @@ better aligned combination.  There was some indication there are some systematic
 in some of the data, so this could be a more advanced version, but there were also some
 very unexplained facts about the cross-corr data.
 
+As can be seen from the central pixel spectrum (the pipeline has this as the last figure)
+there are very obvious cases where the skewness of the profile indicates a pointing offset.
+
 Otherwise the effective beam for the ALMA+LMT combination is not the traditional 12", but more
 like 13 or 14", which has some impact on fidelity and correctness of the combination.
+
+From a higher resolution CO(2-1) alma image one can see the central velocity gradient
+is about 20-25 km/s/arcsec.  At an assumed distance of 13.9 Mpc, this 30-40 km/s/kpc
 

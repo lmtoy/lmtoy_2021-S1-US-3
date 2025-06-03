@@ -34,7 +34,7 @@ on['RT-Vir'] = [
 
 #        common parameters per source on the first dryrun (run1a, run2a)
 pars1 = {}
-pars1['M100']   = "dv=250 dw=300 extent=220"
+pars1['M100']   = "dv=250 dw=300 extent=220 otf_cal=1"
 pars1['RT-Vir'] = "dv=25 dw=50 extent=120 maskmoment=0"
 
 #        common parameters per source on subsequent runs (run1b, run2b)
