@@ -43,4 +43,4 @@ pars2['M100']   = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15 maskmoment=1"
 pars2['RT-Vir'] = ""
 
 if __name__ == '__main__':
-    runs.mk_runs(project, on, pars1, pars2, sys.argv)
+    runs.mk_runs(project, on, pars1, pars2, None, sys.argv)
