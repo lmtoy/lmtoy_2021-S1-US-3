@@ -1,62 +1,63 @@
 # comments and flags for M100 - by default we remove beams 0 and 5, except where overridden below with pix_list=
 #
 #  pars1['M100'] = "dv=250 dw=300 extent=220"
-#  pars2['M100'] = "pix_list=1,2,3,4,6,7,8,9,10,11,12,13,14,15"
+#  pars2['M100'] = "pix_list=-0,-5"
 #
 # Night 1 (8/8)
-97520       first science map!!!      # offx=-0.9 offy=-0.6
-97521       6?                        # offx=-0.3 offy=0.3
-97523       .                         # offx=-1.3 offy=-0.5
-97524       .                         # offx=-0.7 offy=-0.2
-97528       6?                        # offx=-3.4 offy=-0.8
-97529       6?                        # offx=-1.0 offy=-0.8
-97531       6?                        # offx=-0.7 offy=-4.5
-97532       6?                        # offx=0.6 offy=-4.9
+97520       first science map!!!      # offx=-0.88 offy=-0.61
+97521       6?                        # offx=-0.36 offy=0.27
+97523       .                         # offx=-1.34 offy=-0.50
+97524       .                         # offx=-0.71 offy=-0.17
+97528       6?                        # offx=-3.34 offy=-0.77
+97529       6?                        # offx=-0.99 offy=-0.77
+97531       6?                        # offx=-0.71 offy=-4.51
+97532       6?                        # offx=0.55 offy=-4.84
 # Night 2 (0/4)
 97740       QAFAIL bad night2
 97741       QAFAIL bad night2
 97743       QAFAIL bad night2
 97744       QAFAIL bad night2
 # Night 3 (5/8)
-97861       6?                        # offx=5.2 offy=-0.7
+97861       6?                        # offx=5.18 offy=-0.72
 97862       QAFAIL bad wavys
-97863       6?                        # offx=5.5 offy=0.0
-97864       wavy at end               # offx=9.8 offy=2.9
-97870       6?                        # offx=-0.3 offy=-5.7
-97871       6,14?                     # offx=0.8 offy=-8.6
+97863       6?                        # offx=5.47 offy=0.05
+97864       wavy at end               # offx=9.81 offy=2.86
+97870       6?                        # offx=-0.25 offy=-5.67
+97871       6,14?                     # offx=0.84 offy=-8.64
 97872       QAFAIL all bad baselines
 97873       QAFAIL 1/2 bad baselines
 # Night 4 (7/8)
-97993       .                         # offx=5.0 offy=-0.4
-97994       6?                        # offx=5.4 offy=-0.8
-97999       6?                        # offx=-0.9 offy=-4.8
-98000       .                         # offx=-0.3 offy=-1.8
-98006       .                         # offx=0.4 offy=-4.5
+97993       .                         # offx=5.01 offy=-0.39
+97994       6?                        # offx=5.41 offy=-0.83
+97999       6?                        # offx=-0.94 offy=-4.84
+98000       .                         # offx=-0.31 offy=-1.76
+98006       .                         # offx=0.38 offy=-4.46
 98007       QAFAIL wavys
-98011       some wavys                # offx=0.2 offy=0.4
-98012       lots bad wavys            # offx=0.8 offy=0.7          pix_list=1,3,9,13,14,15
+98011       some wavys                # offx=0.21 offy=0.38
+98012       lots bad wavys            # offx=0.84 offy=0.71        pix_list=1,3,9,13,14,15
 # Night 5 (10/10)
 #                   pnt+/- means the center profile is skewed positive/negative
-98686       .                         # offx=4.6 offy=-0.9
-98687       .                         # offx=0.9 offy=-2.2              pix_list=-0
-98691       pnt+                      # offx=0.0 offy=-0.1               pix_list=-0
-98692       .                         # offx=2.6 offy=-3.9  pix_list=-0
-98726       6?                        # offx=0.9 offy=-4.3  pix_list=-0
-98727       pnt-                      # offx=0.7 offy=-5.1               pix_list=-0
-98731       pnt++                     # offx=-4.7 offy=0.2
-98732       pnt++                     # offx=-5.4 offy=0.0               pix_list=-0
-98736       pnt++                     # offx=-5.7 offy=-0.0               pix_list=-0
-98737       pnt++                     # offx=-6.3 offy=-3.6
+98686       .                         # offx=4.61 offy=-0.94
+98687       .                         # offx=0.95 offy=-2.15       pix_list=-0
+98691       pnt+                      # offx=-0.02 offy=-0.11      pix_list=-0
+98692       .                         # offx=2.61 offy=-3.85       pix_list=-0
+98726       6?                        # offx=0.89 offy=-4.35       pix_list=-0
+98727       pnt-                      # offx=0.66 offy=-5.12       pix_list=-0
+98731       pnt++                     # offx=-4.71 offy=0.22
+98732       pnt++                     # offx=-5.40 offy=0.05       pix_list=-0
+98736       pnt++                     # offx=-5.68 offy=-0.00      pix_list=-0
+98737       pnt++                     # offx=-6.25 offy=-3.58
 # Night 6 (2/2)
-98974	    pnt++                     # offx=-5.9 offy=-0.9  pix_list=-0,-14,-15
-98975	    pnt++       weak          # offx=-7.7 offy=-1.5  pix_list=-0,-14,-15
+98974	    pnt++                     # offx=-5.85 offy=-0.83      pix_list=-0,-14,-15
+98975	    pnt++       weak          # offx=-7.74 offy=-1.49      pix_list=-0,-14,-15
 # Night 7 (6/6)
-99674       .                         # offx=-0.8 offy=-4.4
-99675       pnt+                      # offx=-0.7 offy=-0.5
-99679       .                         # offx=-1.6 offy=-5.3
-99680       pnt-                      # offx=-1.0 offy=-6.0 pix_list=-0,1,5,6
-99702       stripes                   # offx=-1.2 offy=-4.5
-99703       last obsnum               # offx=-0.3 offy=-4.5
+99674       .                         # offx=-0.76 offy=-4.40
+99675       pnt+                      # offx=-0.65 offy=-0.55
+99679       .                         # offx=-1.57 offy=-5.34
+99680       pnt-                      # offx=-0.94 offy=-6.00      pix_list=-0,1,5,6
+99702       stripes                   # offx=-1.22 offy=-4.51
+99703       last obsnum               # offx=-0.25 offy=-4.46
+
 
 #  RT-Vir pointing source
 
