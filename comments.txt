@@ -33,8 +33,8 @@
 98000       .                         # offx=-0.31 offy=-1.76
 98006       .                         # offx=0.38 offy=-4.46
 98007       QAFAIL wavys
-98011       some wavys                # offx=0.21 offy=0.38
-98012       lots bad wavys            # offx=0.84 offy=0.71        pix_list=1,3,9,13,14,15
+98011       QAFAIL some wavys                # offx=0.21 offy=0.38
+98012       QAFAIL lots bad wavys            # offx=0.84 offy=0.71        pix_list=1,3,9,13,14,15
 # Night 5 (10/10)
 #                   pnt+/- means the center profile is skewed positive/negative
 98686       .                         # offx=4.61 offy=-0.94
