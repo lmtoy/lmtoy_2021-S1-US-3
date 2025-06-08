@@ -143,6 +143,7 @@ pixel RA = 185.7288971   DEC = 15.82231045)
 summary:
 
 - ALMA CO10 and CO21 agree well on the center:   12:22:54.934  +15:49:20.41   - error maybe 0.1"
+- LMT also seems to be using this center:        12:22:54.935  +15:49:20.32 
 - NED however is 1" off in RA and 2.5" in DEC:   12:22:54.8616 +15:49:17.886
 
 
