@@ -61,27 +61,34 @@
 
 #  RT-Vir pointing source
 
+# night 1
 97513    pointing bad              # pix_list=-0,1,2
 97518    pointing ok               # pix_list=-0,3,5
 97526    pointing ok          	   # pix_list=-3,5
-97534    pointing ok           	   # pix_list=-2,5
-97738    pointing ok         	   # pix_list=-0,2,3
-97746    pointing ok           	   # pix_list=-0,1,2,5
+97534    pointing ok - looks off   # pix_list=-2,5
 
+# night 2
+97738    pointing ok - wacko 	   # pix_list=-0,2,3
+97746    pointing ok - off    	   # pix_list=-0,1,2,5
+
+# night 3
 97859    pointing ok               # pix_list=-0,3
-97866    pointing - very wavy      # pix_list=-0,3
-97867    pointing - very wavy      # pix_list=-0,3
+97866    pointing - very wavy - messy     # pix_list=-0,3
+97867    pointing - very wavy - off     # pix_list=-0,3
 # 97868    PLFAIL mislabeled
-97875    pointing  ok              # pix_list=-0,1,2,5
-97879    pointing  ok              # pix_list=-1,2,5
-97996    pointing  ok              # pix_list=-3
+97875    pointing  ok   - off           # pix_list=-0,1,2,5
+97879    pointing  ok  - ok            # pix_list=-1,2,5
 
+# night 4
+97996    pointing  ok              # pix_list=-3
 98002    pointing  ok              # pix_list=-3
 # 98004    pointing - short obs    #
 98009    pointing ok   wavy	   # pix_list=-2,3
 98014    pointing ok - messy       # pix_list=-2
 98016    pointing ok - wavy        # pix_list=-1,2
 
+
+# night 5
 98684    pointing ok  - rippled    # pix_list=-0,3
 98689    pointing ok               # pix_list=-0,3
 
@@ -90,23 +97,24 @@
 98734    pointing  ok              # pix_list=-2
 98739    pointing  ok              # pix_list=-2
 
-98869    pointing  ok                # pix_list=-3
+# night 6
+98869    pointing  off                # pix_list=-3
 98878    pointing  ok                # pix_list=-3
 98888    pointing  ok                # pix_list=-3,14,15
 
-
-98949    pointing  ok                # pix_list=-2,3,14,15
+98949    pointing  off                # pix_list=-2,3,14,15
 98958    pointing  ok                # pix_list=-2,14,15
 98968    pointing  ok                # pix_list=-2,14,15
 98970    pointing  ok                # pix_list=-2,14,15
 98972    pointing  ok                # pix_list=-2,14,15
-98977    pointing  ok                # pix_list=-1,14,15
+98977    pointing  off               # pix_list=-1,14,15
 
+# night 7
 99672    pointing  ok                # pix_list=-3,-5
-99677    pointing  ok   (-5?)        # pix_list=-3
-99682    pointing  ok     	     # pix_list=-2,3
+99677    pointing  off   (-5?)        # pix_list=-3
+99682    pointing  off     	     # pix_list=-2,3
 99683    pointing  ok     	     # pix_list=-2,3
-99705    pointing    (-5?)   	     # pix_list=-0,2
+99705    pointing  ok  (-5?)   	     # pix_list=-0,2
 
 
 # Pointing?
