@@ -26,13 +26,13 @@ Observations were taken in 7 nights in Spring 2022: April 5, 6, 7, 8, 27 and May
 Links to http://lmtserver.astro.umass.edu/ShiftReports/ seem empty?
 
 
-     Apr 5   begin, 2, end        http://lmtserver.astro.umass.edu/ShiftReports/Note-20220405.html
-     Apr 6   begin, end           http://lmtserver.astro.umass.edu/ShiftReports/Note-20220406.html
-     Apr 7   begin, 2, end, end   http://lmtserver.astro.umass.edu/ShiftReports/Note-20220407.html
-     Apr 8   4, end, end          http://lmtserver.astro.umass.edu/ShiftReports/Note-20220408.html
-     Apr 27  begin, 4, end        http://lmtserver.astro.umass.edu/ShiftReports/Note-20220427.html
-     May 4   8xbegin, end         http://lmtserver.astro.umass.edu/ShiftReports/Note-20220504.html
-     May 17  begin, 3, end        http://lmtserver.astro.umass.edu/ShiftReports/Note-20220517.html
+     Apr 5   begin, 2, end        97512 - 97534
+     Apr 6   begin, end           97737 - 97746
+     Apr 7   begin, 2, end, end   97858 - 97879
+     Apr 8   4, end, end          97992 - 98016
+     Apr 27  begin, 4, end        98683 - 98739
+     May 4   8xbegin, end         98868 - 98977
+     May 17  begin, 3, end        99671 - 99705
 
        April                  May           
 Su Mo Tu We Th Fr Sa  Su Mo Tu We Th Fr Sa  
