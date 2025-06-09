@@ -116,6 +116,10 @@
 99683    pointing  ok     	     # pix_list=-2,3
 99705    pointing  ok  (-5?)   	     # pix_list=-0,2
 
+# bad
+99713  Script was not configured correctly
+99714  Script was not configured correctly
+99778  This map was not part of the script. Probably something got messed up with the FSM
 
 # Pointing?
 
