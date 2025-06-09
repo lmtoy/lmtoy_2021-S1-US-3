@@ -63,17 +63,17 @@
 
 # night 1
 97513    pointing bad              # pix_list=-0,1,2
-97518    pointing ok               # pix_list=-0,3,5
-97526    pointing ok          	   # pix_list=-3,5
-97534    pointing ok - looks off   # pix_list=-2,5
+97518    pointing ok -0.6 -0.7     # pix_list=-0,3,5
+97526    pointing ok -0.1 0.2 	   # pix_list=-3,5
+97534    pointing off -5.1 2.8     # pix_list=-2,5
 
-# night 2
-97738    pointing ok - wacko 	   # pix_list=-0,2,3
-97746    pointing ok - off    	   # pix_list=-0,1,2,5
+# night 2  (all QAFAIL)
+97738    pointing QAFAIL 	   # pix_list=-0,2,3
+97746    pointing QAFAIl    	   # pix_list=-0,1,2,5
 
 # night 3
-97859    pointing ok               # pix_list=-0,3
-97866    pointing - very wavy - messy     # pix_list=-0,3
+97859    pointing ok 0.5 -0.9           # pix_list=-0,3
+97866    pointing - very wavy - messy -1.9 7.6    # pix_list=-0,3
 97867    pointing - very wavy - off     # pix_list=-0,3
 # 97868    PLFAIL mislabeled
 97875    pointing  ok   - off           # pix_list=-0,1,2,5
